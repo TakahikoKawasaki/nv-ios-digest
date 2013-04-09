@@ -41,7 +41,7 @@ Example
 
     // Another way to compute.
     md5 = [[MD5 alloc] init];
-    [md5 updateWithString:@"Hello", world."];
+    [md5 updateWithString:@"Hello, world."];
     [md5 final];
     NSLog(@"md5 = %@", md5);
 
