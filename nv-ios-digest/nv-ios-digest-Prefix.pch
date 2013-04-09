@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nv-ios-digest' target in the 'nv-ios-digest' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
