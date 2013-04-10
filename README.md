@@ -46,6 +46,13 @@ Example
     NSLog(@"md5 = %@", md5);
 
 
+Blog
+----
+
+[Message digests (MD5, SHA1, etc.) on iOS with dedicated classes]
+(http://darutk-oboegaki.blogspot.jp/2013/04/message-digests-md5-sha1-etc-on-ios.html)
+
+
 Author
 ------
 
