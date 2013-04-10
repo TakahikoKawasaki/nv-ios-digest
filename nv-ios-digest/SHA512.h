@@ -18,16 +18,12 @@
 //----------------------------------------------------------------------
 // Headers
 //----------------------------------------------------------------------
-#import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonDigest.h>
+#import "MessageDigest.h"
 
 
 //----------------------------------------------------------------------
 // Interface
 //----------------------------------------------------------------------
-@interface SHA512 : NSObject
-- (int)updateWith:(const void *)data length:(CC_LONG)length;
-- (int)updateWithString:(NSString *)string;
-- (unsigned char *)final;
+@interface SHA512 : NSObject <MessageDigest>
 + (SHA512 *)sha512WithString:(NSString *)string;
 @end

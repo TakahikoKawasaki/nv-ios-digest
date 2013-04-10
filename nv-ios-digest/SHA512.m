@@ -41,9 +41,7 @@
         return nil;
     }
 
-    CC_SHA512_Init(&_context);
-
-    _description = @"'final' not called";
+    [self reset];
 
     return self;
 }
@@ -52,6 +50,16 @@
 - (NSString *)description
 {
     return _description;
+}
+
+
+- (void)reset
+{
+    CC_SHA512_Init(&_context);
+
+    memset(_digest, 0, sizeof(_digest));
+
+    _description = @"'final' not called";
 }
 
 
@@ -97,6 +105,18 @@
                     _digest[60], _digest[61], _digest[62], _digest[63]];
 
     return _digest;
+}
+
+
+- (unsigned char *)buffer
+{
+    return _digest;
+}
+
+
+- (size_t)bufferSize
+{
+    return sizeof(_digest);
 }
 
 

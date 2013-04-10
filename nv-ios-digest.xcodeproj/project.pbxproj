@@ -72,6 +72,7 @@
 		A92CD71A17143CD1003A12E0 /* SHA384.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA384.m; sourceTree = "<group>"; };
 		A92CD71C17143E29003A12E0 /* SHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA512.h; sourceTree = "<group>"; };
 		A92CD71D17143E29003A12E0 /* SHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA512.m; sourceTree = "<group>"; };
+		A95DDDC81715D658002F3753 /* MessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDigest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 		A92CD6E617141F5A003A12E0 /* nv-ios-digest */ = {
 			isa = PBXGroup;
 			children = (
+				A95DDDC81715D658002F3753 /* MessageDigest.h */,
 				A92CD70D17142242003A12E0 /* MD5.h */,
 				A92CD70E17142242003A12E0 /* MD5.m */,
 				A92CD71017143569003A12E0 /* SHA1.h */,
@@ -439,6 +441,7 @@
 				A92CD70817141F5A003A12E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A92CD70917141F5A003A12E0 /* Build configuration list for PBXNativeTarget "nv-ios-digestTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +450,7 @@
 				A92CD70B17141F5A003A12E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
