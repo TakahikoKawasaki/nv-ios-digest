@@ -72,6 +72,12 @@
 }
 
 
+- (int)updateWithBool:(BOOL)data
+{
+    return [self updateWith:(const void *)&data length:sizeof(BOOL)];
+}
+
+
 - (int)updateWithChar:(char)data
 {
     return [self updateWith:(const void *)&data length:sizeof(char)];

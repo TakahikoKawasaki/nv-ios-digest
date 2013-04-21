@@ -64,6 +64,15 @@
  * Accumulate a data chunk.
  *
  * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(BOOL)].
+ */
+- (int)updateWithBool:(BOOL)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
  *[self updateWith:(const void *)&data length:sizeof(char)].
  */
 - (int)updateWithChar:(char)data;
