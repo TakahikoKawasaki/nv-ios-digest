@@ -42,6 +42,8 @@
  *
  * Implementations of MessageDigest will call CC_XX_Update() function
  * (e.g. CC_MD5_Update(CC_MD5_CTX *, const void *, CC_LONG)) to update.
+ *
+ * If data is NULL, this method does nothing and returns 0.
  */
 - (int)updateWith:(const void *)data length:(CC_LONG)length;
 
@@ -52,6 +54,8 @@
  * This method is just a wrapper over updateWith:length:.
  * The given string is converted to a C string with encoding
  * NSUTF8StringEncoding and passed to updateWith:length.
+ *
+ * If nil is given, this method does nothing and returns 0.
  */
 - (int)updateWithString:(NSString *)string;
 

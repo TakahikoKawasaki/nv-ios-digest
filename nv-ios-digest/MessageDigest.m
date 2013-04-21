@@ -57,6 +57,11 @@
 
 - (int)updateWithString:(NSString *)string
 {
+    if (string == nil)
+    {
+        return 0;
+    }
+
     // Convert the given 'NSString *' to 'const char *'.
     const char *str = [string cStringUsingEncoding:NSUTF8StringEncoding];
 

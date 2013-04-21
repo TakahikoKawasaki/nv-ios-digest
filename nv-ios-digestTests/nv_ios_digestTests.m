@@ -141,4 +141,14 @@
 }
 
 
+- (void)testNil
+{
+    MD5 *md = [[MD5 alloc] init];
+
+    int ret = [md updateWithString:nil];
+
+    STAssertTrue(ret == 0, @"updateWithString:nil should return 0.");
+}
+
+
 @end

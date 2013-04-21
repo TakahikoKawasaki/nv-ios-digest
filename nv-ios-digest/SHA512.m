@@ -50,6 +50,11 @@
 
 - (int)updateWith:(const void *)data length:(CC_LONG)length
 {
+    if (data == NULL)
+    {
+        return 0;
+    }
+    
     return CC_SHA512_Update(&_context, data, length);
 }
 
