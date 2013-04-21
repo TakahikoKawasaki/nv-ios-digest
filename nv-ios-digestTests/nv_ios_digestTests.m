@@ -123,4 +123,22 @@
 }
 
 
+- (void)testChar
+{
+    NSString *input = @"Hello, world.";
+    NSString *expected = @"080aef839b95facf73ec599375e92d47";
+
+    MD5 *md = [[MD5 alloc] init];
+    for (int i = 0; i < [input length]; ++i)
+    {
+        char c = (char)[input characterAtIndex:i];
+        [md updateWithChar:c];
+    }
+
+    [md final];
+
+    [self doTest:input expected:expected md:md];
+}
+
+
 @end

@@ -24,6 +24,6 @@
 //----------------------------------------------------------------------
 // Interface
 //----------------------------------------------------------------------
-@interface SHA512 : NSObject <MessageDigest>
+@interface SHA512 : MessageDigest
 + (SHA512 *)sha512WithString:(NSString *)string;
 @end

@@ -50,8 +50,73 @@
  * Accumulate a data chunk.
  *
  * This method is just a wrapper over updateWith:length:.
+ * The given string is converted to a C string with encoding
+ * NSUTF8StringEncoding and passed to updateWith:length.
  */
 - (int)updateWithString:(NSString *)string;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(char)].
+ */
+- (int)updateWithChar:(char)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(short)].
+ */
+- (int)updateWithShort:(short)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(int)].
+ */
+- (int)updateWithInt:(int)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(long)].
+ */
+- (int)updateWithLong:(long)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(long long)].
+ */
+- (int)updateWithLongLong:(long long)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(float)].
+ */
+- (int)updateWithFloat:(float)data;
+
+
+/**
+ * Accumulate a data chunk.
+ *
+ * This method is an alias of
+ *[self updateWith:(const void *)&data length:sizeof(double)].
+ */
+- (int)updateWithDouble:(double)data;
 
 
 /**
@@ -89,5 +154,13 @@
  */
 - (size_t)bufferSize;
 
+
+@end
+
+
+//----------------------------------------------------------------------
+// Interface
+//----------------------------------------------------------------------
+@interface MessageDigest : NSObject <MessageDigest>
 
 @end

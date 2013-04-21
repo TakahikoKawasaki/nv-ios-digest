@@ -22,6 +22,7 @@
 		A92CD71817143B39003A12E0 /* SHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = A92CD71717143B39003A12E0 /* SHA256.m */; };
 		A92CD71B17143CD1003A12E0 /* SHA384.m in Sources */ = {isa = PBXBuildFile; fileRef = A92CD71A17143CD1003A12E0 /* SHA384.m */; };
 		A92CD71E17143E29003A12E0 /* SHA512.m in Sources */ = {isa = PBXBuildFile; fileRef = A92CD71D17143E29003A12E0 /* SHA512.m */; };
+		A9B273F8172450D50021C94A /* MessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B273F7172450D50021C94A /* MessageDigest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		A92CD71C17143E29003A12E0 /* SHA512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA512.h; sourceTree = "<group>"; };
 		A92CD71D17143E29003A12E0 /* SHA512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA512.m; sourceTree = "<group>"; };
 		A95DDDC81715D658002F3753 /* MessageDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDigest.h; sourceTree = "<group>"; };
+		A9B273F7172450D50021C94A /* MessageDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDigest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A95DDDC81715D658002F3753 /* MessageDigest.h */,
+				A9B273F7172450D50021C94A /* MessageDigest.m */,
 				A92CD70D17142242003A12E0 /* MD5.h */,
 				A92CD70E17142242003A12E0 /* MD5.m */,
 				A92CD71017143569003A12E0 /* SHA1.h */,
@@ -282,6 +285,7 @@
 				A92CD71817143B39003A12E0 /* SHA256.m in Sources */,
 				A92CD71B17143CD1003A12E0 /* SHA384.m in Sources */,
 				A92CD71E17143E29003A12E0 /* SHA512.m in Sources */,
+				A9B273F8172450D50021C94A /* MessageDigest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

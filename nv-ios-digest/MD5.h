@@ -24,6 +24,6 @@
 //----------------------------------------------------------------------
 // Interface
 //----------------------------------------------------------------------
-@interface MD5 : NSObject <MessageDigest>
+@interface MD5 : MessageDigest
 + (MD5 *)md5WithString:(NSString *)string;
 @end

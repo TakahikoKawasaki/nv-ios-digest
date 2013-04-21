@@ -32,21 +32,6 @@
 }
 
 
-- (id)init
-{
-    self = [super init];
-
-    if (self == nil)
-    {
-        return nil;
-    }
-
-    [self reset];
-
-    return self;
-}
-
-
 - (NSString *)description
 {
     return _description;
@@ -66,18 +51,6 @@
 - (int)updateWith:(const void *)data length:(CC_LONG)length
 {
     return CC_SHA512_Update(&_context, data, length);
-}
-
-
-- (int)updateWithString:(NSString *)string
-{
-    // Convert the given 'NSString *' to 'const char *'.
-    const char *str = [string cStringUsingEncoding:NSUTF8StringEncoding];
-
-    // Get the length of the C-string.
-    CC_LONG len = strlen(str);
-
-    return [self updateWith:str length:len];
 }
 
 
