@@ -65,8 +65,19 @@
     // Convert the given 'NSString *' to 'const char *'.
     const char *str = [string cStringUsingEncoding:NSUTF8StringEncoding];
 
+    // Check if the conversion has succeeded.
+    if (str == NULL)
+    {
+        return 0;
+    }
+
     // Get the length of the C-string.
     CC_LONG len = strlen(str);
+
+    if (len == 0)
+    {
+        return 0;
+    }
 
     return [self updateWith:str length:len];
 }
