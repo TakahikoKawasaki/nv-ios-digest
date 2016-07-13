@@ -72,7 +72,7 @@
     }
 
     // Get the length of the C-string.
-    CC_LONG len = strlen(str);
+    CC_LONG len = (CC_LONG)strlen(str);
 
     if (len == 0)
     {
